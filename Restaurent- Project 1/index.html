@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <script src="java.js"></script>
+	<!-- ----Swiper  slide link with Html -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<!-- restaurent tittle favicon image link -->
+	<link rel="shortcut icon" href="/Restaurent- Project 1/logo.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="/Libraries & frameworks/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Restaurent</title>
+
+	
+</head> 
+<body>
+	<div id="top-move"></div>
+    <div class="container-fluid">
+        <div class="content-1">
+			<ul class="dropdown">
+				<p class="res-name">𝚂𝙰𝚁𝙰𝙷</p>
+				<li><a href="#"><i class="fa-sharp fa-solid fa-house"></i>&nbsp;Home</a></li>
+				<li><a href="#"><i class="fa-sharp fa-solid fa-bars"></i>&nbsp;Menu</a></li>
+				<li><a href="#"><i class="fa-sharp fa-solid fa-image"></i>&nbsp;Gallery</a></li>&nbsp;&nbsp;&nbsp;
+				<li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;About </a></li>&nbsp;
+				<li id="contact" onclick="myContact()"><a href="#"><i class="fa-solid fa-phone-volume"></i>&nbsp;Contact</a></li>
+				<input type="type" name="typing" class="search" placeholder="Type to Order...">
+				<button class="search-but">Search</button>
+			</ul>
+		</div>
+        <!-- /* ---------------------------------------------------------------------- */ -->
+
+        <div>
+            <video class="video" autoplay loop muted plays-inline>
+                <source src="/Restaurent- Project 1/images/restvideo.webm" type="video/mp4" style="width: 100%;">
+            </video>
+        </div>
+        <!-- /* ---------------------------------------------------------------------- */ -->
+        <div class="content-2">
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				  <!-- Slides -->
+				  <div class="swiper-slide"><img src="/Restaurent- Project 1/images/grill.jpg" alt="Grill Chicken"></div>
+				  <div class="swiper-slide"><img src="/Restaurent- Project 1/images/shawarma.jpg" alt="Shawarma"></div>
+				  <div class="swiper-slide"><img src="/Restaurent- Project 1/images/panipuri.jpg" alt="PaniPuri"></div>
+				  <div class="swiper-slide"><img src="/Restaurent- Project 1/images/momos.jpg" alt="Momos"></div>
+				  <div class="swiper-slide"><img src="/Restaurent- Project 1/images/friderice12.jpg" alt="Friderice"></div>
+				  
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			  
+				<!-- If we need navigation buttons  -->
+				 <div class="swiper-button-prev swiper-navbtn"></div>
+				<div class="swiper-button-next swiper-navbtn"></div> 
+			  
+				
+			  </div>
+		</div>
+		<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+                    <!--         slide-1- slider image -->
+       
+					<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+					<script>
+						
+					const swiper = new Swiper('.swiper', {
+						autoplay:{
+							delay:3000,
+							disableOnInteraction:false,
+						},
+						loop: true,
+					  
+						pagination: {
+						  el: '.swiper-pagination',
+						  clickable:true,
+						  dynamicBullets:true,
+						
+						},
+					  
+						// navigation: {
+						//   nextEl: '.swiper-button-next',
+						//   prevEl: '.swiper-button-prev',
+						// },
+					  
+						
+					  });
+					</script>
+					 <!-- End of slide-1- slider image -->
+			<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+			
+			
+		<div class="content-3">
+			<p class="desc-1">Welcome to <span class="desc-2"> Our Restaurent...</span></p>
+			<p class="desc-3"> Food is Symbolic of <i style="color: rgb(215, 206, 206); font-weight: bold;">Love</i> , When words are inadequate!</p>
+		</div>
+
+		<div class="content-4">
+			<div class="tittle">
+				Deliviring Great Food
+				<div class="slider">
+				<div class="">Simply!</div>
+				<div class="">Delicious!</div>
+				<div class="">With love!</div>
+				</div>
+			</div>
+		</div>
+		<Button class="res-but1">Learn More!</Button>
+		<Button class="res-but2" id="myBtn" type="button" onclick="myFunctionTop()">Top!</Button>
+
+		
+
+		<!-- ---------------------------------------------------------------------------------------------- -->
+											<!-- 2nd slide of content -->
+						<div>
+							<img src="/Restaurent- Project 1/images/restable.jpg" alt="res template" class="secondary-img">
+						</div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+								<!---- Starting of Content-5 Item-list-1  -->
+		<div class="content-5">
+			<div class="Menu-item">
+			<div class="slide2-menu">Menu Items</div>
+			</div>
+			<div class="menu-item-staters">
+				<div class="menu-item-staters-1">Non-Veg Staters</div>
+				<div class="menu-item-staters-1">Veg Staters</div>
+				<div class="menu-item-staters-1">Fast Food</div>
+			</div>
+			<!-- list items 1 -->
+		<div class="content-5-card-1">
+		<div class="item-list-1">
+
+			<div class="menu-item-1">
+			     <div class="card-item">
+				     <img class="card-img" src="/Restaurent- Project 1/Card items images/grill-cicken.webp" alt="Grill Cicken">
+			     </div>
+			     <div class="card-desc">
+				     <h3 class="card-desc-1">Grill Cicken</h3> 
+			     	  <p class="card-desc">Spicy grill chicken with sliced fresh tomato, and mozzarella cheese<br> slices. 
+				     <p class="card-desc-2">Price: ₹ 350/-</p>
+			     </div>
+			     <div>
+  				     <button class="card-but-1">Add +</button>
+			     </div>
+			</div>
+
+			<div class="menu-item-1">
+				 <div class="card-item">
+					 <img class="card-img" src="/Restaurent- Project 1/Card items images/Shawarma.webp" alt="Shawarma">
+				 </div>
+				 <div class="card-desc">
+					 <h3 class="card-desc-1">Shawarma</h3> 
+						 <p class="card-desc">Shawarma mixed with cheese & spicy ingredients spread with a tahini mixture.</p> 
+						 <p> spread with a tahini</p>
+						 <p class="card-desc-2">Price: ₹ 150/-</p>
+				 </div>
+				 <div>
+					  <button class="card-but-1">Add +</button> 
+				 </div>
+			</div> 
+
+			<div class="menu-item-1">
+				  <div class="card-item">
+					  <img class="card-img" src="/Restaurent- Project 1/Card items images/PaniPuri.webp" alt="PaniPuri">
+				  </div>
+				  <div class="card-desc">
+					  <h3 class="card-desc-1">PaniPuri</h3> 
+						  <p class="card-desc">Panipuri filled with a mixture of imli pani, chaat masala, potato mash & onion.</p> 
+						  <p class="card-desc-2">Price: ₹ 100/-</p>
+				  </div>
+				  <div>
+					   <button class="card-but-1">Add +</button> 
+				  </div>
+			</div> 
+		</div>
+
+		<div class="item-list-2">
+
+			<div class="menu-item-1">
+			     <div class="card-item">
+				     <img class="card-img" src="/Restaurent- Project 1/Card items images/cicken 65.webp" alt="Cicken 65">
+			     </div>
+			     <div class="card-desc">
+				     <h3 class="card-desc-1">Cicken 65</h3> 
+			     	  <p class="card-desc">Spicy grill chicken with sliced fresh tomato, and mozzarella cheese<br> slices. 
+				     <p class="card-desc-2">Price: ₹ 120/-</p>
+			     </div>
+			     <div>
+  				     <button class="card-but-1">Add +</button>
+			     </div>
+			</div>
+
+			<div class="menu-item-1">
+				 <div class="card-item">
+					 <img class="card-img" src="/Restaurent- Project 1/Card items images/cicken briyani.webp" alt="cicken briyani">
+				 </div>
+				 <div class="card-desc">
+					 <h3 class="card-desc-1">Cicken Briyani</h3> 
+						 <p class="card-desc">Shawarma mixed with cheese & spicy ingredients spread with a tahini mixture.</p> 
+						 <p> spread with a tahini</p>
+						 <p class="card-desc-2">Price: ₹ 150/-</p>
+				 </div>
+				 <div>
+					  <button class="card-but-1">Add +</button> 
+				 </div>
+			</div> 
+
+			<div class="menu-item-1">
+				  <div class="card-item">
+					  <img class="card-img" src="/Restaurent- Project 1/Card items images/Cicken kebab.webp" alt="Cicken kebab">
+				  </div>
+				  <div class="card-desc">
+					  <h3 class="card-desc-1">Chicken Kebab</h3> 
+						  <p class="card-desc">Panipuri filled with a mixture of imli pani, chaat masala, potato mash & onion.</p> 
+						  <p class="card-desc-2">Price: ₹ 220/-</p>
+				  </div>
+				  <div>
+					   <button class="card-but-1">Add +</button> 
+				  </div>
+			</div> 
+		</div>
+
+		<div class="item-list-3">
+
+			<div class="menu-item-1">
+			     <div class="card-item">
+				     <img class="card-img" src="/Restaurent- Project 1/Card items images/drd Briyani.webp" alt="Hydrabad Briyani">
+			     </div>
+			     <div class="card-desc">
+				     <h3 class="card-desc-1">Hydrabad Briyani</h3> 
+			     	  <p class="card-desc">Spicy grill chicken with sliced fresh tomato, and mozzarella cheese<br> slices. 
+				     <p class="card-desc-2">Price: ₹ 180/-</p>
+			     </div>
+			     <div>
+  				     <button class="card-but-1">Add +</button>
+			     </div>
+			</div>
+
+			<div class="menu-item-1">
+				 <div class="card-item">
+					 <img class="card-img" src="/Restaurent- Project 1/Card items images/Mandi briyani.webp" alt="Mandi Briyani">
+				 </div>
+				 <div class="card-desc">
+					 <h3 class="card-desc-1">Mandi Briyani</h3> 
+						 <p class="card-desc">Shawarma mixed with cheese & spicy ingredients spread with a tahini mixture.</p> 
+						 <p> spread with a tahini</p>
+						 <p class="card-desc-2">Price: ₹ 150/-</p>
+				 </div>
+				 <div>
+					  <button class="card-but-1">Add +</button> 
+				 </div>
+			</div> 
+
+			<div class="menu-item-1">
+				  <div class="card-item">
+					  <img class="card-img" src="/Restaurent- Project 1/Card items images/prwn arbiqe.webp" alt="Prawn Curry">
+				  </div>
+				  <div class="card-desc">
+					  <h3 class="card-desc-1">Prawn Curry</h3> 
+						  <p class="card-desc">Panipuri filled with a mixture of imli pani, chaat masala, potato mash & onion.</p> 
+						  <p class="card-desc-2">Price: ₹ 120/-</p>
+				  </div>
+				  <div>
+					   <button class="card-but-1">Add +</button> 
+				  </div>
+			</div> 
+		</div>
+		</div>
+		</div>
+		<!-- --------------------------------------------End of list items--------------------------------------------------- -->
+
+
+		<!-- --------------------------------------------Start of lst content of the page--------------------------------------------------- -->
+		
+		<div class="last-content">
+			<div class="last-content-img">
+				<img src="/Restaurent- Project 1/images/restaurent logo image.jpg" alt="Restaurent logo">
+			</div>
+			<div class="last-content-box1">
+				<p>Contact</p>
+				<ul>
+					<li><i class="fa-solid fa-envelope"></i>&nbsp; &nbsp;SarahRestaurentgmil.com</li>
+					<li><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91 (9500-2711)</li>
+					<li><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;@gokul_PGA25</li>
+					<li><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;Whatsapp</li>
+					<li><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;FaceBook</li>
+				</ul>
+			</div>
+			<div class="last-content-box2">
+				<p>Language Using</p>
+				<ul>
+					<li><i class="fa-brands fa-html5"></i>&nbsp;&nbsp;HTML5</li>
+					<li><i class="fa-brands fa-css3-alt"></i>&nbsp;&nbsp;CSS3</li>
+					<li><i class="fa-brands fa-js"></i>&nbsp;&nbsp;JavaScript</li>
+				</ul>
+			</div>
+			<div class="last-content-box3">
+				<p>Service Providing</p>
+				<ul>
+					<li>Non-Veg Staters</li>
+					<li>Veg Staters</li>
+					<li>Fast Food</li>
+				</ul>
+			</div>
+			
+			</div>
+		</div>
+		<div class="last-content-box4">
+			<ul>
+				<li>Terms of Use</li>
+				<li>Privacy Policy </li>
+				<li>Happiness guarantee</li>
+			</ul>
+		
+		
+
+
+		<!-- End of Content-5 Item-List-1 -->
+<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+		
+
+
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+			<!-- ---Swiper JavaScript -->
+		<script src="/Libraries & frameworks/js/bootstrap.bundle.min.js"></script>
+
+		<!-- -- Swiper JQuery Script SRC -->
+		<script src="/Libraries & frameworks/js/jquery.min.css	"></script>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+</body>
+</html>

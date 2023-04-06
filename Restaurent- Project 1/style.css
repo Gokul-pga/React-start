@@ -1,0 +1,546 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------------------------------------------------------------- */
+
+/*--- restaurent name----*/
+.res-name{
+	transform: translateX(-100px);
+	font-size: 60px;
+	margin-top: -5px;	
+    color: white;
+}
+.res-name:hover{
+	text-shadow: 5px 5px 25px rgb(232, 159, 24);
+}
+/* ---------------------------------------------------------------------- */
+
+/*--- restaurent nav-bar---*/
+.dropdown{
+	display: flex;
+	padding: 14px 0 0 120px;
+	background-color: rgb(42, 43, 43);
+	border-radius: 5px;
+	text-shadow: 1px 1px 3px black;
+    margin-top: 15px;
+}
+.dropdown li{
+	margin-top: 10px;
+	width: 170px;
+	list-style-type: none;
+	float: right;
+	position: relative;
+}
+.content-1{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+/* .content-1 ul li::after{
+	content: "";
+	height: 3px;
+	border-radius: 7px;
+	width: 0px;
+	background:#eda10a;
+	position: absolute;
+	left: 0;
+	bottom: 33px;
+	transition: 0.5s;
+}
+.content-1 ul li:hover::after{
+	width: 80px;
+	transition: 0.5s;
+} */
+.dropdown a{
+	text-decoration: none;
+	/* font-weight: bold; */
+	font-size: 25px;
+	color: white;
+	transition: 0.3s;
+	font-family: 'Times New Roman', Times, serif;
+	/* background-color: palevioletred; */
+	padding: 5px;
+}
+.dropdown a:hover{
+	color: #0a0a0a;
+	/* text-shadow: 0 0 8px rgb(15, 15, 15); */
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 25px;
+
+}
+/* -----Search bar & searc button----- */
+.dropdown .search{
+	background: transparent;
+	border: 3px #ffa31a solid;
+	border-radius: 30px;
+	font-size: 20px;
+	padding: 10px;
+	margin: 0 0 20px 400px;
+	color: rgb(248, 244, 244);
+	background-color: transparent;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+::placeholder{
+	color: rgb(255, 251, 251);
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+.search:focus{
+	color: none;
+	background-color: rgba(255, 255, 255, 0.155);
+	border: 3px #ffa31a solid;
+	
+}
+::placeholder:focus{
+	display: none;
+}
+
+.dropdown .search-but{
+	margin: 8px 0 25px 20px;
+	padding: 5px 15px;
+	border-radius: 13px;
+	background-color: transparent;
+	font-size: 20px;
+	transition: 0.5s;
+	font-weight: bold;
+	letter-spacing: .1em;
+	border: 3px #ffa31a solid;
+	color: white;
+}
+.dropdown .search-but:hover{
+	background-color: rgba(255, 255, 255, 0.155);
+	border: 3px #ffa31a solid;
+	color: rgb(255, 255, 255);
+}
+
+/* ---------------------------------------------------------------------- */
+/* --- restaurent bg-video--- */
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -5;
+	background-size: cover;
+	width: 100%;
+} 
+/* ---------------------------------------------------------------------- */
+/* ---- button css-----*/
+.res-but1{
+	margin: -60px 660px 0 0;
+	cursor: pointer;
+	padding: 10px 18px;
+	font-size: 20px;
+	font-weight: bold;
+	float: right;
+	border-radius: 26px;
+	color: white;
+	background-color: transparent;
+	border: 3px solid white;
+	letter-spacing: 2px;
+	transition: .5s;
+}
+.res-but1:hover{
+	background-color: #ffa31a;
+	border: 3px solid rgb(13, 12, 12);
+}
+/* ---------------------------------------------------------------------- */
+.res-but2{
+	padding: 5px 15px;
+	border-radius: 10px;
+	font-size: 20px;
+	background: transparent;
+	border: 3px white solid;
+	color: white;
+	width: 80px;
+	letter-spacing: 2px;
+	transition: .5s;
+	font-weight: bold;
+	transform: translateX(1695px);
+	position: fixed;
+	bottom: 15px;
+	cursor: pointer;
+	
+}
+.res-but2:hover{
+	border: 3px solid rgb(13, 12, 12);
+	background-color: #ffa31a;
+	cursor: pointer;
+
+}
+
+/* ---------------------------------------------------------------------- */
+/* -- swiper slide images-- */
+.content-2{
+    margin: 200px 0 0 150px;
+    /* display: flex; */
+    height: 450px;
+    width: 650px;
+	max-width: 650px ;
+}
+
+.swiper-slide img{
+	 /* height: 350px;
+	width: 430px;
+	margin: 25px 100px 0 0; 
+	transition: transform .7s;
+	border-radius: 10%;
+	background-color: pink;  */
+	height: 350px;
+	margin: 30px 0 50px 60px;
+	border-radius: 20px;
+	transition: transform .5s;
+	cursor: pointer;
+}
+.swiper-slide img:hover{
+	transform: scale(1.1);
+	transition: transform .3s;
+
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+	color: rgb(255, 255, 255);
+	size: 30px;
+	transition: 0.5s ease;
+}
+.swiper-navbtn:hover{
+	color: #ff9d00;
+	font-size: 30px;
+}
+.swiper-pagination{
+	color: rgb(255, 255, 255);
+}
+
+
+.swiper-navbtn::before,
+.swiper-navbtn::after{
+	font-size: 40px;
+}
+.content-2 .swiper .res-item-list{
+	/* background-color: yellow;
+	font-size: 30px;
+	color: aqua;
+	margin: 100px 0 0 100px; */
+	color: rgb(252, 244, 244);
+	text-shadow: 0 0 10px rgb(3, 2, 2);
+	font-weight: bold;
+	
+}
+/* ---------------------------------------------------------------------- */
+
+/*---- restaurent description css ----*/
+.content-3{
+	/* background-color: rgb(49, 177, 220); */
+	width: 800px;
+	float: right;
+	margin: -250px 50px 0 15px;
+}
+.content-3 .desc-1{
+	font-size: 55px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgb(17, 17, 17);
+}
+.content-3 .desc-2{
+	color: #ffa31a;
+	letter-spacing: 1.5px;
+	font-size: 45px;
+}
+.content-3 .desc-3{
+	margin: 5px 0 0 15px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	color: rgb(65, 66, 67);
+	letter-spacing: .1em;
+
+}
+/* ---------------------------------------------------------------------- */
+
+/* ----Sliding text--- */
+.content-4{
+	width: 800px;
+	float: right;
+	margin: -50px 35px 0 0;
+}
+.tittle{
+	margin: -90px 0 0 -5px;
+	color: rgb(15, 16, 16);
+	font-size: 45px;
+	font-weight: bold;
+	height: 56px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.slider{
+	color: #ffa31a;
+	box-sizing: border-box;
+	animation: slider 5s linear infinite;
+	margin-left: 10px;
+}
+@keyframes slider{
+	0%{margin-top: -200px; }
+	5%{margin-top: -100px; }
+	30%{margin-top: -100px; }
+	35%{margin-top: 0px; }
+	65%{margin-top: 0px; }
+	75%{margin-top: 100px; }
+	100%{margin-top: 100px; }
+	0%{margin-top: -300px; }
+
+}
+
+/* ---------------------------------------------------------------------- */
+/* ----- secondary imge for restaurent website */
+.secondary-img{
+	margin: 170px 0 0 0;
+	background-size: cover;
+	width: 100%;
+	border-radius: 10px;
+}
+/* ----------------------------------------------------------------------- */
+/* -----Menu Content slides */
+.content-5:hover{
+	background-color: #fff;
+}
+.Menu-item{
+	display: flex;
+	justify-content: center;
+}
+.slide2-menu{
+	font-size: 35px;
+	text-align: center;
+	width: 350px;
+	font-family: 'Times New Roman', Times, serif;
+	/* background-color: palevioletred; */
+	/* margin: 0 0 0 750px; */
+	transform: translateY(-970px);
+	color: white;
+	letter-spacing: .1em;
+	background-color: transparent;
+	border: 3px #ffa31a solid;
+	padding: 5px 0;
+	transition: 0.3s;
+	border-radius: 10px;
+}
+.slide2-menu:hover{
+	background-color: #ffa31aab;
+	border: 3px rgb(247, 243, 243) solid;
+
+}
+
+.menu-item-staters{
+	display: inline-flex;
+	/* background-color: rgba(66, 65, 65, 0.562); */
+	padding: 20px 0;
+	width: 100%;
+	justify-content: center;
+	justify-content: space-evenly;
+	transform: translateY(-930px);
+}
+.menu-item-staters-1{
+	width: 200px;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	padding: 7px 0;
+	border: 3px #ffa31a solid;
+	border-radius: 0 8px 0 8px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.menu-item-staters-1:hover{
+	background-color: #ffa31aab;
+	border: 3px #ffffff solid;
+
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----menu list items 1 */
+
+.item-list-1{
+	display: flex;
+	justify-content: space-between;
+	margin: -880px 10px 0 10px;
+}
+.item-list-2{
+	display: flex;
+	justify-content: space-between;
+	margin: 80px 10px 0 10px;
+}
+.item-list-3{
+	display: flex;
+	justify-content: space-between;
+	margin: 80px 10px 0 10px;
+}
+.card-img{
+	height: 120px;
+	width: 150px;
+	border-radius: 10px;
+	margin: 15px 0 0 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.menu-item-1{
+	display: flex;
+	border: 5px #ffa31a solid;
+	border-radius: 0 15px 0 15px;
+	width: 580px;
+	transition: 0.3s;
+}
+.menu-item-1:hover{
+	background-color: #edebe89f;
+	border: 5px rgb(227, 223, 223) solid;
+	color: black;
+	cursor: default;
+}
+.menu-item-1:hover .card-img{
+	transform: scale(1.1);
+	color: black;
+}
+.card-desc-1{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+.card-desc-2{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	margin: 0 0 0 8px;
+}
+.card-desc{
+	margin: 5px 0 0 8px;
+	width: 330px;
+	font-weight: bold;
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-but-1{
+	padding: 0 4px;
+	border-radius: 6px;
+	margin: 4px 0 0 15px;
+	border: 3px #0a0a0a solid;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+/* <!-- --------------------------------------------Start of lst content of the page--------------------------------------------------- --> */
+
+.last-content{
+	display: flex;
+	margin-top: 50px;
+	height: 500px;
+	text-align: center;
+	justify-content: space-evenly;
+	border: 3px rgb(91, 88, 88) solid;
+	border-radius: 10px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.812), rgb(51, 49, 49));
+	z-index: -1;
+
+}
+/* .last-content{
+	background-image: url(/images/logo\ image\ 2.jpg);
+} */
+.last-content .last-content-img img{
+	height: 250px;
+	width: 250px;
+	border-radius: 85%;
+	margin-top: 125px;
+	cursor: pointer;
+	border: 5px black solid;
+	transition: 0.3s;
+}
+.last-content-img img:hover{
+	border: 5px #ffa31a solid;
+	scale: 1.1;
+	transition: 0.3s;
+}
+.last-content-box1 p{
+	margin-top: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 35px;
+	display: flex;
+	flex-direction: row;
+}
+.last-content-box1 li{
+	margin-top: 10px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	color: #fff;
+
+}
+.last-content-box2 {
+	margin-top: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 35px;
+}
+.last-content-box2  li{
+	margin-top: 10px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	color: #fff;
+	line-height: 1em;
+
+}
+.last-content-box3{
+	margin-top: 30px;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 35px;
+}
+.last-content-box3 li{
+	margin-top: 10px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	color: #fff;
+	line-height: 1em;
+	font-weight: lighter;
+}
+.last-content-box4{
+	margin-right: 250px;
+}
+.last-content li:hover{
+	color: #ff9d00;
+	cursor: pointer;
+}
+
+.last-content-box4 li{
+	list-style-type: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1.5em;
+	margin-right: 30px;
+	margin-top: -49px;
+	padding: 10px 0;
+
+}
+.last-content-box4 li:hover{
+	color: #ff9d00;
+	cursor: pointer;
+}
